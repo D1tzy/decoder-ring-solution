@@ -53,5 +53,5 @@ const caesarModule = (function () {
   };
 })();
 
-module.exports = [{ caesar: caesarModule.caesar },
-                  { getCaesar: caesarModule.getCaesar} ];
+module.exports = { caesar: caesarModule.caesar },
+                  { getCaesar: caesarModule.getCaesar};
