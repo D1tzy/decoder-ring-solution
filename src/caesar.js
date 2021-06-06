@@ -9,7 +9,9 @@ const caesarModule = (function () {
 
   function caesar(input, shift, encode = true) {
     // your solution code here
-   
+    const caesarAlphabet = getCaesar(alphabet, shift, encode);
+
+    return caesarAlphabet;
   }
 
   function getCaesar(alphabet, shift, encode = true) {
@@ -49,9 +51,10 @@ const caesarModule = (function () {
   }
 
   return {
-    caesar, getCaesar
+    caesar,
   };
 })();
 
-module.exports = { caesar: caesarModule.caesar },
-                  { getCaesar: caesarModule.getCaesar};
+module.exports = { 
+  caesar: caesarModule.caesar,
+}
