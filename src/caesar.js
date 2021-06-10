@@ -2,7 +2,7 @@
 // as the index.html and test files rely on this setup to work properly.
 // Only add code (e.g., helper methods, variables, etc.) within the scope
 // of the anonymous function on line 6
-let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 const alphaLength = alphabet.length;
 
 
@@ -32,9 +32,8 @@ const caesarModule = (function () {
     else {
       return (index >= Math.abs(shift)) ? letter = alphabet[index - Math.abs(shift)] : letter = alphabet[(alphaLength + index) - Math.abs(shift)];
     }
+  }
 
-    
-}
   return {
     caesar, getCaesar
   };})();
