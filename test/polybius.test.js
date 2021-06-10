@@ -46,8 +46,8 @@ describe("polybius()", () => {
         expectEqual(actual, expected);
     })
     it("should return a proper coded string", () => {
-        expected = "4432423352125413";
-        actual = polybius("thinkful");
+        expected = "23513434112251";
+        actual = polybius("message");
         expectEqual(actual, expected);
     })
     it("should decode a string properly", () => {
